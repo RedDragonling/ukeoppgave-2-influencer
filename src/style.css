@@ -2,6 +2,10 @@
   --main-color: #fff;
   --sec-color: #fff;
   --tert-color: #fff;
+  --font-color: #fff;
+  --font-special-color: #fff;
+  --font-special-active: #fff;
+  --title-color: #fff;
 }
 
 @font-face {
@@ -20,10 +24,51 @@
   box-sizing: border-box;
 }
 
-h1, h2 {
-  font-family: 'MamaBear', Arial, Helvetica, sans-serif;
-}
 
 body {
   font-family: 'MondayFeelings', Arial, Helvetica, sans-serif;
+}
+
+header {
+  min-height: 120px;
+  max-height: 30vh;
+  background-color: red;
+  padding: 1em;
+  .title {
+    font-family: 'MamaBear', Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: var(--title-color);
+    text-shadow: 0 0 10px #ffffff70;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      list-style: none;
+      margin: 1em;
+      a {
+        text-decoration: none;
+        color: var(--font-special-color);
+        &:hover {
+          color: var(--font-special-active);
+        }
+      }
+    }
+  }
+}
+
+main {
+  .landing-page {
+    height: 100px;
+  }
+}
+
+footer {
+  background-color: blue;
+  img {
+    height: 100px;
+  }
 }
