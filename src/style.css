@@ -1,8 +1,10 @@
 :root {
-  --main-color: #fff;
-  --sec-color: #fff;
-  --tert-color: #fff;
-  --font-color: #fff;
+  --main-color: #ffbcca;
+  --sec-color: #ea9dd2;
+  --tert-color: #b38ac5;
+  --light-color: #ffdcb5;
+  --dark-color: #847ead;
+  --font-color: #5a5484;
   --font-special-color: #fff;
   --font-special-active: #fff;
   --title-color: #fff;
@@ -27,13 +29,28 @@
 
 body {
   font-family: 'MondayFeelings', Arial, Helvetica, sans-serif;
+  background-color: var(--main-color);
+  background: linear-gradient(180deg, var(--light-color), var(--sec-color));
+  height: 100vh;
+  color: var(--font-color);
 }
 
 header {
-  min-height: 120px;
+  min-height: 140px;
   max-height: 30vh;
-  background-color: red;
+  background-color: var(--sec-color);
   padding: 1em;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
+  .logo-title {
+    display: flex;
+    justify-content: center;
+    .logo {
+      height: 100px;
+      &:last-child {
+        transform: scaleX(-1);
+      }
+    }
+  }
   .title {
     font-family: 'MamaBear', Arial, Helvetica, sans-serif;
     text-align: center;
@@ -54,6 +71,7 @@ header {
         color: var(--font-special-color);
         &:hover {
           color: var(--font-special-active);
+          text-shadow: 0 0 7px;
         }
       }
     }
@@ -61,14 +79,29 @@ header {
 }
 
 main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  article {
+    width: 20vw;
+    height: 20em;
+    background-color: var(--light-color);
+    padding: 1em;
+    box-shadow: 6px 6px 0 #00000020;
+  }
   .landing-page {
-    height: 100px;
+    height: 400px;
   }
 }
 
 footer {
-  background-color: blue;
+  background-color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
   img {
     height: 100px;
+    margin: 0 1em;
   }
 }
