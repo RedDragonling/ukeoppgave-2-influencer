@@ -44,9 +44,6 @@ header {
   .logo-title {
     display: flex;
     justify-content: center;
-    &:hover {
-      cursor: pointer;
-    }
     .logo {
       height: 100px;
       &:last-child {
