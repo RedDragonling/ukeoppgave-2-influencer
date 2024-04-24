@@ -101,8 +101,15 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 1em;
+  box-shadow: 0 50vh 0 50vh var(--dark-color);
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+  }
   img {
-    height: 100px;
-    margin: 0 1em;
+    height: 70px;
+    /* margin: 0 1em; */
   }
 }
