@@ -121,6 +121,36 @@ main {
       }
     }
   }
+  &.register-main {
+    
+  }
+
+  &.login-main {
+
+  }
+
+  &.form {
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em 0;
+      input {
+        margin: 0.5em;
+      }
+      label {
+        margin: 0.5em;
+      }
+    }
+  }
+  &.comments-main {
+    border: 1px solid red;
+  }
+}
+
+#submit-button {
+  padding: 0.5em 1em;
+  color: var(--font-color);
 }
 
 footer {
