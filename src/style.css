@@ -107,6 +107,14 @@ main {
         align-items: center;
         width: 20vw;
         background-color: var(--light-color);
+        input {
+          height: 2em;
+          width: 3em;
+        }
+        select {
+          height: 2em;
+          width: 10em;
+        }
       }
       img {
         width: 80%;
