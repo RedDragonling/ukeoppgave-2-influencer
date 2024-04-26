@@ -31,6 +31,8 @@ body {
   font-family: 'MondayFeelings', Arial, Helvetica, sans-serif;
   background-color: var(--main-color);
   background: linear-gradient(180deg, var(--light-color), var(--sec-color));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   color: var(--font-color);
 }
@@ -91,6 +93,25 @@ main {
   }
   .landing-page {
     height: 400px;
+  }
+  &.store-main {
+    tr {
+      display: flex;
+      justify-content: space-between;
+      td {
+        margin: 2px;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+        background-color: var(--light-color);
+      }
+      img {
+        width: 80%;
+      }
+    }
   }
 }
 
